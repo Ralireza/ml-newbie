@@ -1,5 +1,6 @@
 import data_generator as dg
 import NB as nb
+import numpy as np
 
 import random
 
@@ -24,14 +25,18 @@ def generate_dataset_1():
     return my_classes
 
 
-nb = nb.GaussNB()
-data = generate_dataset_1()
-train_list, test_list = nb.split_data(data, weight=.67)
-print("Using %s rows for training and %s rows for testing" % (len(train_list), len(test_list)))
-group = nb.group_by_class(data, -1)  # designating the last column as the class column
-print("Grouped into %s classes: %s" % (len(group.keys()), group.keys()))
-nb.train(train_list, -1)
-predicted = nb.predict(test_list)
-accuracy = nb.accuracy(test_list, predicted)
-print('Accuracy: %.3f' % accuracy)
+# nb = nb.GaussNB()
+# data = generate_dataset_1()
+# train_list, test_list = nb.split_data(data, weight=.67)
+# print("Using %s rows for training and %s rows for testing" % (len(train_list), len(test_list)))
+# group = nb.group_by_class(data, -1)  # designating the last column as the class column
+# print("Grouped into %s classes: %s" % (len(group.keys()), group.keys()))
+# nb.train(train_list, -1)
+# predicted = nb.predict(test_list)
+# accuracy = nb.accuracy(test_list, predicted)
+# print('Accuracy: %.3f' % accuracy)
+
+mydata = generate_dataset_1()
+
+
 
