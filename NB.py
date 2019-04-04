@@ -5,7 +5,9 @@ import random
 import csv
 import re
 
-
+# https://github.com/aishajv/Unfolding-Naive-Bayes-from-Scratch/blob/master/%23%20Unfolding%20Na%C3%AFve%20Bayes%20from%20Scratch!%20Take-2%20%F0%9F%8E%AC.ipynb
+# https://github.com/justdvnsh/Classification-Methods/blob/master/Classification/iris/iris_naive_bayes.ipynb
+# https://github.com/odubno/GaussNaiveBayes
 class GaussNB:
     def __init__(self):
         pass
@@ -235,18 +237,18 @@ class GaussNB:
         return correct / float(len(test_set))
 
 
-def main():
-    nb = GaussNB()
-    data = nb.load_csv('iris.csv', header=True)
-    train_list, test_list = nb.split_data(data, weight=.67)
-    print("Using %s rows for training and %s rows for testing" % (len(train_list), len(test_list)))
-    group = nb.group_by_class(data, -1)  # designating the last column as the class column
-    print("Grouped into %s classes: %s" % (len(group.keys()), group.keys()))
-    nb.train(train_list, -1)
-    predicted = nb.predict(test_list)
-    accuracy = nb.accuracy(test_list, predicted)
-    print('Accuracy: %.3f' % accuracy)
-
-
-if __name__ == '__main__':
-    main()
+# def main():
+#     nb = GaussNB()
+#     data = nb.load_csv('iris.csv', header=True)
+#     train_list, test_list = nb.split_data(data, weight=.67)
+#     print("Using %s rows for training and %s rows for testing" % (len(train_list), len(test_list)))
+#     group = nb.group_by_class(data, -1)  # designating the last column as the class column
+#     print("Grouped into %s classes: %s" % (len(group.keys()), group.keys()))
+#     nb.train(train_list, -1)
+#     predicted = nb.predict(test_list)
+#     accuracy = nb.accuracy(test_list, predicted)
+#     print('Accuracy: %.3f' % accuracy)
+#
+#
+# if __name__ == '__main__':
+#     main()
