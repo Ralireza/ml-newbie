@@ -1,7 +1,7 @@
 import data_generator as dg
 import NB as nb
 import numpy as np
-
+import KNN
 import random
 
 
@@ -36,7 +36,10 @@ def generate_dataset_1():
 # accuracy = nb.accuracy(test_list, predicted)
 # print('Accuracy: %.3f' % accuracy)
 
-mydata = generate_dataset_1()
 
+myknn = KNN.knn(data=generate_dataset_1(), k=5, weight=.67)
 
-
+test, predicted = myknn.test_data()
+print((test))
+print((predicted))
+print(myknn.accuracy(test, predicted))

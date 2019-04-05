@@ -6,14 +6,11 @@ import csv
 import re
 
 
-
-n_training_samples = 15
-
-
 class knn:
 
-    def __init__(self, filename, k, weight):
-        data = self.load_csv(filename, header=True)
+    def __init__(self, csv_file=None, data=None, k=1, weight=.67):
+        if not csv_file is None:
+            data = self.load_csv(csv_file, header=False)
         mydata, labels = self.translate(data)
         self.learnset_data, self.learnset_labels, self.testset_data, self.testset_labels = self.split_data(mydata,
                                                                                                            labels,
@@ -33,7 +30,7 @@ class knn:
         if header:
             # remove header
             dataset = dataset[1:]
-        f=len(dataset)
+        f = len(dataset)
         for i in range(len(dataset)):
             dataset[i] = [float(x) if re.search('\d', x) else x for x in dataset[i]]
         return dataset
@@ -82,7 +79,7 @@ class knn:
         #       ", label: ", testset_labels[i],
         #       ", data: ", testset_data[i])
         predicte = list()
-        for i in range(n_training_samples):
+        for i in range(len(self.testset_data)):
             neighbors = self.get_neighbors(self.learnset_data,
                                            self.learnset_labels,
                                            self.testset_data[i],
@@ -95,7 +92,7 @@ class knn:
 
     def translate(self, data):
         labels = np.ndarray(shape=(len(data),), dtype="object")
-        for i in range(len(data)-1):
+        for i in range(len(data)):
             labels[i] = data[i][(len(data[0]) - 1)]
         last = (len(data[0]) - 1)
         for row in data:
@@ -128,11 +125,3 @@ class knn:
             if test_set[i] == predicted[i]:
                 correct += 1
         return correct / float(len(test_set))
-
-
-myknn = knn('iris.csv', 3, weight=.67)
-
-test, predicted = myknn.test_data()
-print(test)
-print(predicted)
-# print(myknn.accuracy(test, predicted))
