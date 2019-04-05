@@ -4,6 +4,7 @@ from collections import Counter
 import random
 import csv
 import re
+from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 
 
 class knn:
@@ -125,3 +126,12 @@ class knn:
             if test_set[i] == predicted[i]:
                 correct += 1
         return correct / float(len(test_set))
+
+    def report(self, test, predict):
+        accuracy = accuracy_score(test, predict)
+        cm = confusion_matrix(test, predict)
+        report = classification_report(test, predict)
+        return accuracy , cm , report
+
+
+

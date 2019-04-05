@@ -4,6 +4,7 @@ from math import e
 import random
 import csv
 import re
+from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 
 
 # https://github.com/aishajv/Unfolding-Naive-Bayes-from-Scratch/blob/master/%23%20Unfolding%20Na%C3%AFve%20Bayes%20from%20Scratch!%20Take-2%20%F0%9F%8E%AC.ipynb
@@ -237,4 +238,8 @@ class GaussNB:
                 correct += 1
         return correct / float(len(test_set))
 
-
+    def report(self, test, predict):
+        accuracy = accuracy_score(test, predict)
+        cm = confusion_matrix(test, predict)
+        report = classification_report(test, predict)
+        return accuracy, cm, report
