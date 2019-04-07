@@ -3,7 +3,7 @@ import NB as nb
 import random
 import KNN
 
-def generate_dataset_2():
+def generate_dataset_2(count):
     # class 1
     mean1 = [-1.5, 1]
     cov1 = [[0.5, 0.3], [0.3, 1]]
@@ -16,9 +16,9 @@ def generate_dataset_2():
     mean3 = [-1.5, -2.25]
     cov3 = [[0.25, 0.3], [0.3, 0.7]]
 
-    x1, y1 = dg.data_generator(mean1, cov1)
-    x2, y2 = dg.data_generator(mean2, cov2)
-    x3, y3 = dg.data_generator(mean3, cov3)
+    x1, y1 = dg.data_generator(mean1, cov1, count)
+    x2, y2 = dg.data_generator(mean2, cov2, count)
+    x3, y3 = dg.data_generator(mean3, cov3, count)
     my_classes = []
     for i in range(len(x1) - 1):
         my_classes.append([x1[i], y1[i], 'class1'])
@@ -40,7 +40,7 @@ def generate_dataset_2():
 # accuracy = nb.accuracy(test_list, predicted)
 # print('Accuracy: %.3f' % accuracy)
 
-myknn = KNN.knn(data=generate_dataset_2(), k=3, weight=.67)
+myknn = KNN.knn(data=generate_dataset_2(200), k=3, weight=.67)
 
 test, predicted = myknn.test_data()
 print((test))

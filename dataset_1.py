@@ -5,7 +5,7 @@ import KNN
 import random
 
 
-def generate_dataset_1():
+def generate_dataset_1(count):
     # class 1
     mean1 = [0, 0]
     cov1 = [[0.5, 0.3], [0.3, 1]]
@@ -14,8 +14,8 @@ def generate_dataset_1():
     mean2 = [1, 2]
     cov2 = [[0.25, 0.3], [0.3, 1]]
 
-    x1, y1 = dg.data_generator(mean1, cov1)
-    x2, y2 = dg.data_generator(mean2, cov2)
+    x1, y1 = dg.data_generator(mean1, cov1, count)
+    x2, y2 = dg.data_generator(mean2, cov2, count)
     my_classes = []
     for i in range(len(x1) - 1):
         my_classes.append([x1[i], y1[i], 'class1'])
@@ -37,9 +37,12 @@ def generate_dataset_1():
 # print('Accuracy: %.3f' % accuracy)
 
 
-myknn = KNN.knn(data=generate_dataset_1(), k=5, weight=.67)
+myknn = KNN.knn(data=generate_dataset_1(1500), k=3, weight=.67)
 
 test, predicted = myknn.test_data()
-print((test))
-print((predicted))
-print(myknn.accuracy(test, predicted))
+# print((test))
+# print((predicted))
+ac, cm, re = myknn.report(test, predicted)
+print(re,"\n")
+print(cm,"\n")
+print(ac,"\n")
