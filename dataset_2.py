@@ -3,6 +3,7 @@ import NB as nb
 import random
 import KNN
 
+
 def generate_dataset_2(count):
     # class 1
     mean1 = [-1.5, 1]
@@ -29,20 +30,27 @@ def generate_dataset_2(count):
     return my_classes
 
 
-# nb = nb.GaussNB()
-# data = generate_dataset_2()
-# train_list, test_list = nb.split_data(data, weight=.67)
-# print("Using %s rows for training and %s rows for testing" % (len(train_list), len(test_list)))
-# group = nb.group_by_class(data, -1)  # designating the last column as the class column
-# print("Grouped into %s classes: %s" % (len(group.keys()), group.keys()))
-# nb.train(train_list, -1)
-# predicted = nb.predict(test_list)
-# accuracy = nb.accuracy(test_list, predicted)
-# print('Accuracy: %.3f' % accuracy)
+I_WANT_USE_BAYES = True
+if I_WANT_USE_BAYES:
 
-myknn = KNN.knn(data=generate_dataset_2(200), k=3, weight=.67)
+    nb = nb.GaussNB()
+    data = generate_dataset_2(1000)
+    train_list, test_list = nb.split_data(data, weight=.90)
+    # print("Using %s rows for training and %s rows for testing" % (len(train_list), len(test_list)))
+    group = nb.group_by_class(data, -1)  # designating the last column as the class column
+    # print("Grouped into %s classes: %s" % (len(group.keys()), group.keys()))
+    nb.train(train_list, -1)
+    predicted = nb.predict(test_list)
+    ac, cm, re = nb.report(test_list, predicted)
+    print(re, "\n")
+    print(cm, "\n")
+    print(ac, "\n")
+else:
+    myknn = KNN.knn(data=generate_dataset_2(1000), k=3, weight=.70)
 
-test, predicted = myknn.test_data()
-print((test))
-print((predicted))
-print(myknn.accuracy(test, predicted))
+    test, predicted = myknn.test_data()
+    ac, cm, re = myknn.report(test, predicted)
+
+    print(re, "\n")
+    print(cm, "\n")
+    print(ac, "\n")

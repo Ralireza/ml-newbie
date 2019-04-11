@@ -25,24 +25,29 @@ def generate_dataset_1(count):
     return my_classes
 
 
-# nb = nb.GaussNB()
-# data = generate_dataset_1()
-# train_list, test_list = nb.split_data(data, weight=.67)
-# print("Using %s rows for training and %s rows for testing" % (len(train_list), len(test_list)))
-# group = nb.group_by_class(data, -1)  # designating the last column as the class column
-# print("Grouped into %s classes: %s" % (len(group.keys()), group.keys()))
-# nb.train(train_list, -1)
-# predicted = nb.predict(test_list)
-# accuracy = nb.accuracy(test_list, predicted)
-# print('Accuracy: %.3f' % accuracy)
+I_WANT_USE_BAYES = False
 
+if I_WANT_USE_BAYES:
+    nb = nb.GaussNB()
+    data = generate_dataset_1(1000)
+    train_list, test_list = nb.split_data(data, weight=0.8)
+    # print("Using %s rows for training and %s rows for testing" % (len(train_list), len(test_list)))
+    group = nb.group_by_class(data, -1)  # designating the last column as the class column
+    # print("Grouped into %s classes: %s" % (len(group.keys()), group.keys()))
+    nb.train(train_list, -1)
+    predicted = nb.predict(test_list)
+    ac, cm, re = nb.report(test_list, predicted)
+    print(re, "\n")
+    print(cm, "\n")
+    print(ac, "\n")
 
-myknn = KNN.knn(data=generate_dataset_1(1500), k=3, weight=.67)
+else:
 
-test, predicted = myknn.test_data()
-# print((test))
-# print((predicted))
-ac, cm, re = myknn.report(test, predicted)
-print(re,"\n")
-print(cm,"\n")
-print(ac,"\n")
+    myknn = KNN.knn(data=generate_dataset_1(100), k=3, weight=l)
+
+    test, predicted = myknn.test_data()
+    ac, cm, re = myknn.report(test, predicted)
+
+    print(re, "\n")
+    print(cm, "\n")
+    print(ac, "\n")

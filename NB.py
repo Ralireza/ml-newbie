@@ -7,9 +7,6 @@ import re
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 
 
-# https://github.com/aishajv/Unfolding-Naive-Bayes-from-Scratch/blob/master/%23%20Unfolding%20Na%C3%AFve%20Bayes%20from%20Scratch!%20Take-2%20%F0%9F%8E%AC.ipynb
-# https://github.com/justdvnsh/Classification-Methods/blob/master/Classification/iris/iris_naive_bayes.ipynb
-# https://github.com/odubno/GaussNaiveBayes
 class GaussNB:
     def __init__(self):
         pass
@@ -41,6 +38,7 @@ class GaussNB:
         train_size = int(len(data) * weight)
         train_set = []
         for i in range(train_size):
+            random.seed(1)
             index = random.randrange(len(data))
             train_set.append(data[index])
             data.pop(index)
@@ -83,6 +81,9 @@ class GaussNB:
             squared_diff_list.append(squared_diff)
         squared_diff_sum = sum(squared_diff_list)
         sample_n = float(len(numbers) - 1)
+
+        if sample_n == 0:
+            sample_n = 1
         var = squared_diff_sum / sample_n
         return var ** .5
 
@@ -93,6 +94,7 @@ class GaussNB:
         Use zip to line up each feature into a single column across multiple lists.
         yield the mean and the stdev for each feature.
         """
+        print(test_set)
         for feature in zip(*test_set):
             yield {
                 'stdev': self.stdev(feature),
@@ -120,6 +122,7 @@ class GaussNB:
         group = self.group_by_class(train_list, target)
         self.summaries = {}
         for target, features in group.items():
+            print(target)
             self.summaries[target] = {
                 'prior_prob': self.prior_prob(group, target, train_list),
                 'summary': [i for i in self.summarize(features)],
@@ -224,22 +227,9 @@ class GaussNB:
             map_probs.append(map_prob)
         return map_probs
 
-    def accuracy(self, test_set, predicted):
-        """
-        :param test_set: list of test_data
-        :param predicted: list of predicted classes
-        :return:
-        Calculate the the average performance of the classifier.
-        """
-        correct = 0
-        actual = [item[-1] for item in test_set]
-        for x, y in zip(actual, predicted):
-            if x == y:
-                correct += 1
-        return correct / float(len(test_set))
-
     def report(self, test, predict):
-        accuracy = accuracy_score(test, predict)
-        cm = confusion_matrix(test, predict)
-        report = classification_report(test, predict)
+        actual = [item[-1] for item in test]
+        accuracy = accuracy_score(actual, predict)
+        cm = confusion_matrix(actual, predict)
+        report = classification_report(actual, predict)
         return accuracy, cm, report

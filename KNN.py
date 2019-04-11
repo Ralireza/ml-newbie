@@ -34,6 +34,7 @@ class knn:
         f = len(dataset)
         for i in range(len(dataset)):
             dataset[i] = [float(x) if re.search('\d', x) else x for x in dataset[i]]
+        # print(dataset)
         return dataset
 
     def distance(self, instance1, instance2):
@@ -114,24 +115,8 @@ class knn:
 
         return learnset_data, learnset_labels, testset_data, testset_labels
 
-    def accuracy(self, test_set, predicted):
-        """
-        :param test_set: list of test_data
-        :param predicted: list of predicted classes
-        :return:
-        Calculate the the average performance of the classifier.
-        """
-        correct = 0
-        for i in range(len(test_set)):
-            if test_set[i] == predicted[i]:
-                correct += 1
-        return correct / float(len(test_set))
-
     def report(self, test, predict):
         accuracy = accuracy_score(test, predict)
         cm = confusion_matrix(test, predict)
         report = classification_report(test, predict)
-        return accuracy , cm , report
-
-
-
+        return accuracy, cm, report
