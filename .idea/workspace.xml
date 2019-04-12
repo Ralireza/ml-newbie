@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bf47a13-ce49-4e4f-af7a-015b8b227a9c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/alr.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/KNN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NB.py" beforeDir="false" afterPath="$PROJECT_DIR$/NB.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_generator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iris_knn.py" beforeDir="false" afterPath="$PROJECT_DIR$/iris_knn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iris_nb.py" beforeDir="false" afterPath="$PROJECT_DIR$/iris_nb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file.csv" beforeDir="false" afterPath="$PROJECT_DIR$/file.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocr_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/ocr.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,8 +17,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/KNN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="109" column="39" selection-start-line="109" selection-start-column="28" selection-end-line="109" selection-end-column="39" />
+            <state relative-caret-position="176">
+              <caret line="14" column="22" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="22" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -35,24 +29,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NB.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="519">
-              <caret line="130" lean-forward="true" selection-start-line="130" selection-end-line="130" />
+            <state relative-caret-position="2728">
+              <caret line="130" selection-start-line="130" selection-end-line="130" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
-                <element signature="e#2061#2207#0" />
-                <element signature="e#3208#3384#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ocr_classifier.py">
+        <entry file="file://$PROJECT_DIR$/ocr.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="29" column="19" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="19" />
+            <state relative-caret-position="600">
+              <caret line="43" column="63" selection-start-line="43" selection-start-column="63" selection-end-line="43" selection-end-column="63" />
               <folding>
-                <element signature="e#0#31#0" expanded="true" />
+                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -91,8 +83,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dataset_1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="770">
-              <caret line="53" lean-forward="true" selection-start-line="27" selection-end-line="53" />
+            <state relative-caret-position="1078">
+              <caret line="53" selection-start-line="27" selection-end-line="53" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
               </folding>
@@ -135,8 +127,9 @@
         <option value="$PROJECT_DIR$/iris_knn.py" />
         <option value="$PROJECT_DIR$/data_generator.py" />
         <option value="$PROJECT_DIR$/KNN.py" />
-        <option value="$PROJECT_DIR$/ocr_classifier.py" />
         <option value="$PROJECT_DIR$/NB.py" />
+        <option value="$PROJECT_DIR$/ocr_classifier.py" />
+        <option value="$PROJECT_DIR$/ocr.py" />
       </list>
     </option>
   </component>
@@ -152,7 +145,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -169,6 +161,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -290,7 +283,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ocr_classifier.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ocr.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -333,14 +326,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1044" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12124407" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32969433" />
-      <window_info anchor="bottom" id="Run" internal_type="SLIDING" order="2" type="SLIDING" weight="0.44759825" />
+      <window_info active="true" anchor="bottom" id="Run" internal_type="SLIDING" order="2" type="SLIDING" visible="true" weight="0.83406115" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3951965" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -357,11 +349,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ocr_classifier.py</url>
-          <line>53</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/NB.py</url>
           <line>121</line>
@@ -440,6 +427,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///usr/lib/python3/dist-packages/apport_python_hook.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.6/dist-packages/sklearn/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KNN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2728">
+          <caret line="130" selection-start-line="130" selection-end-line="130" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iris_nb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="10" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/data_generator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -457,58 +481,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/KNN.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="109" column="39" selection-start-line="109" selection-start-column="28" selection-end-line="109" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dataset_1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="53" lean-forward="true" selection-start-line="27" selection-end-line="53" />
+        <state relative-caret-position="1078">
+          <caret line="53" selection-start-line="27" selection-end-line="53" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/iris_nb.py">
+    <entry file="file://$PROJECT_DIR$/ocr.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="10" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/python3/dist-packages/apport_python_hook.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NB.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="130" lean-forward="true" selection-start-line="130" selection-end-line="130" />
+        <state relative-caret-position="600">
+          <caret line="43" column="63" selection-start-line="43" selection-start-column="63" selection-end-line="43" selection-end-column="63" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <element signature="e#2061#2207#0" />
-            <element signature="e#3208#3384#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocr_classifier.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="29" column="19" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>

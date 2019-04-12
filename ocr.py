@@ -1,12 +1,6 @@
-import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
 import cv2
-import numpy as np
-import pickle
 import os
 import csv
-import NB as nb
-
 import KNN
 
 
@@ -40,34 +34,16 @@ def write_csv(images_path='classes/', pickled_db_path="features.pck"):
             for key, value in final_path.items():
                 writer = csv.writer(csv_file, delimiter=',')
                 for path in value:
-                    writer.writerow(extract_features(path, 3, key))
+                    writer.writerow(extract_features(path, 30, key))
 
 
 write_csv()
 
 
-I_WANT_USE_BAYES = True
-
-
-if I_WANT_USE_BAYES:
-    nb = nb.GaussNB()
-    data = nb.load_csv('file.csv', header=False)
-    group = nb.group_by_class(data, -1)  # designating the last column as the class column
-    train_list, test_list = nb.split_data(data, weight=.90)
-    nb.train(train_list, -1)
-    predicted = nb.predict(test_list)
-
-    ac, cm, re = nb.report(test_list, predicted)
-    print(re, "\n")
-    print(cm, "\n")
-    print(ac, "\n")
-
-
-else:
-
-    myknn = KNN.knn(csv_file='file.csv', data=None, k=2, weight=.50)
-    test, predicted = myknn.test_data()
-    ac, cm, re = myknn.report(test, predicted)
-    print(ac)
-    print(cm)
-    print(re)
+#
+myknn = KNN.knn(csv_file='file.csv', data=None, k=2, weight=.50)
+test, predicted = myknn.test_data()
+ac, cm, re = myknn.report(test, predicted)
+print(ac)
+print(cm)
+print(re)
