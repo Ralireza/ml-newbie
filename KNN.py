@@ -1,7 +1,5 @@
 import numpy as np
-from sklearn import datasets
 from collections import Counter
-import random
 import csv
 import re
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
