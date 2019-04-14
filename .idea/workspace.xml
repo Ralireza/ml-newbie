@@ -2,8 +2,434 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bf47a13-ce49-4e4f-af7a-015b8b227a9c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bayes/NB.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bayes/iris_nb.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/KNN.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/dataset_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/file.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/iris.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/iris_knn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/0/0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/0/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/0/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/0/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/0/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/0/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/0/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/0/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/0/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/0/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/0/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/0/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/0/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/0/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/0/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/0/22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/0/23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/0/24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/0/25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/0/26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/0/27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/0/28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/0/29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/0/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/0/30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/0/31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/0/32.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/0/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/0/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/0/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/0/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/0/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/0/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/1/0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/1/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/1/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/1/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/1/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/1/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/1/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/1/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/1/16-IMG10_row12_dig1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/1/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/1/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/1/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/1/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/1/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/1/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/1/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/1/22-IMG10_row13_dig2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/1/22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/1/23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/1/24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/1/25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/1/26-IMG10_row14_dig1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/1/26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/1/27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/1/28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/1/29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/1/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/1/30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/1/31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/1/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/1/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/1/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/1/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/1/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/1/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/10/0-IMG10_row0_dig0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/10/0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/10/1-IMG10_row0_dig1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/10/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/10/10-IMG10_row11_dig0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/10/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/10/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/10/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/10/13-IMG10_row11_dig3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/10/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/10/14-IMG10_row11_dig4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/10/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/10/15-IMG10_row12_dig0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/10/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/10/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/10/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/10/18-IMG10_row12_dig3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/10/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/10/19-IMG10_row12_dig4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/10/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/10/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/10/20-IMG10_row13_dig0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/10/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/10/3-IMG10_row0_dig3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/10/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/10/4-IMG10_row0_dig4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/10/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/10/5-IMG10_row10_dig0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/10/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/10/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/10/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/10/8-IMG10_row10_dig3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/10/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/10/9-IMG10_row10_dig4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/10/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/11/0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/11/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/11/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/11/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/11/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/11/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/11/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/11/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/11/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/11/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/11/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/11/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/11/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/11/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/11/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/11/22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/11/23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/11/24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/11/25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/11/26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/11/27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/11/28-IMG10_row14_dig3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/11/28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/11/29-IMG10_row14_dig4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/11/29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/11/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/11/30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/11/31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/11/32.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/11/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/11/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/11/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/11/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/11/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/11/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/2/0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/2/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/2/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/2/11-IMG10_row11_dig1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/2/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/2/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/2/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/2/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/2/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/2/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/2/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/2/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/2/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/2/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/2/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/2/21-IMG10_row13_dig1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/2/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/2/22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/2/23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/2/24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/2/25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/2/26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/2/27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/2/28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/2/29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/2/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/2/30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/2/31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/2/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/2/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/2/6-IMG10_row10_dig1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/2/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/2/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/2/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/2/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/3/0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/3/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/3/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/3/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/3/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/3/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/3/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/3/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/3/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/3/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/3/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/3/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/3/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/3/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/3/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/3/22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/3/23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/3/24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/3/25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/3/26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/3/27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/3/28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/3/29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/3/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/3/30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/3/31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/3/32.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/3/33.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/3/34.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/3/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/3/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/3/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/3/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/3/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/3/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/4/0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/4/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/4/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/4/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/4/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/4/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/4/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/4/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/4/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/4/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/4/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/4/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/4/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/4/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/4/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/4/22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/4/23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/4/24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/4/25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/4/26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/4/27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/4/28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/4/29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/4/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/4/30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/4/31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/4/32.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/4/33.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/4/34.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/4/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/4/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/4/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/4/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/4/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/4/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/5/0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/5/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/5/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/5/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/5/12-IMG10_row11_dig2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/5/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/5/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/5/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/5/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/5/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/5/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/5/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/5/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/5/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/5/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/5/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/5/22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/5/23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/5/24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/5/25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/5/26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/5/27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/5/28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/5/29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/5/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/5/30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/5/31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/5/32.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/5/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/5/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/5/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/5/7-IMG10_row10_dig2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/5/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/5/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/5/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/6/0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/6/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/6/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/6/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/6/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/6/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/6/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/6/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/6/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/6/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/6/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/6/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/6/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/6/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/6/22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/6/23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/6/24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/6/25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/6/26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/6/27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/6/28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/6/29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/6/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/6/30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/6/31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/6/32.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/6/33.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/6/34.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/6/35.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/6/36.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/6/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/6/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/6/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/6/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/6/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/7/0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/7/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/7/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/7/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/7/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/7/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/7/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/7/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/7/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/7/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/7/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/7/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/7/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/7/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/7/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/7/22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/7/23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/7/24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/7/25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/7/26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/7/27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/7/28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/7/29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/7/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/7/30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/7/31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/7/32.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/7/33.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/7/34.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/7/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/7/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/7/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/7/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/7/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/7/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/8/0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/8/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/8/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/8/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/8/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/8/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/8/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/8/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/8/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/8/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/8/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/8/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/8/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/8/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/8/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/8/22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/8/23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/8/24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/8/25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/8/26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/8/27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/8/28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/8/29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/8/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/8/30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/8/31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/8/32.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/8/33.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/8/34.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/8/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/8/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/8/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/8/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/8/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/8/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/9/0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/9/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/9/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/9/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/9/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/9/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/9/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/9/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/9/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/9/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/9/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/9/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/9/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/9/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/9/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/9/22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/9/23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/9/24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/9/25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/9/26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/9/27-IMG10_row14_dig2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/9/27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/9/28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/9/29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/9/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/9/30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/9/31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/9/32.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/9/33.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/9/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/9/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/9/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/9/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/9/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/persian_number/9/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocr.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,86 +438,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/KNN.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2200">
-              <caret line="100" column="27" selection-start-line="100" selection-start-column="21" selection-end-line="100" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NB.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2728">
-              <caret line="130" selection-start-line="130" selection-end-line="130" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ocr.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/iris_nb.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="10" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_generator.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" selection-start-line="4" selection-end-line="10" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/iris_knn.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="10" selection-start-column="10" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dataset_1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="44" column="28" lean-forward="true" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -151,11 +498,6 @@
             <path>
               <item name="hw1" type="b2602c69:ProjectViewProjectNode" />
               <item name="hw1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hw1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hw1" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -325,9 +667,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1017" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.12124407" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12124407" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -338,7 +679,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32969433" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3274918" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3274918" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -364,17 +705,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout-to-restore>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/NB.py</url>
-          <line>121</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
@@ -424,16 +754,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataset_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="688">
-          <caret line="50" column="32" lean-forward="true" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classes/1/24.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -455,26 +775,6 @@
     </entry>
     <entry file="file:///usr/local/lib/python3.6/dist-packages/sklearn/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NB.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2728">
-          <caret line="130" selection-start-line="130" selection-end-line="130" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ocr.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/iris_nb.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -516,6 +816,36 @@
           <caret line="100" column="27" selection-start-line="100" selection-start-column="21" selection-end-line="100" selection-end-column="27" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="130" selection-start-line="130" selection-end-line="130" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="597">
+          <caret line="50" column="32" lean-forward="true" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
