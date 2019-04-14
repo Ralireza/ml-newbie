@@ -1,8 +1,16 @@
-import data_generator as dg
 import NB as nb
 import numpy as np
 import KNN
 import random
+
+
+def data_generator(mean, cov, count):
+    np.random.seed(1)
+    x, y = np.random.multivariate_normal(mean, cov, count).T
+    # plt.plot(x, y, 'x')
+    # plt.axis('equal')
+    # plt.show()
+    return [x, y]
 
 
 def generate_dataset_1(count):
@@ -14,8 +22,8 @@ def generate_dataset_1(count):
     mean2 = [1, 2]
     cov2 = [[0.25, 0.3], [0.3, 1]]
 
-    x1, y1 = dg.data_generator(mean1, cov1, count)
-    x2, y2 = dg.data_generator(mean2, cov2, count)
+    x1, y1 = data_generator(mean1, cov1, count)
+    x2, y2 = data_generator(mean2, cov2, count)
     my_classes = []
     for i in range(len(x1) - 1):
         my_classes.append([x1[i], y1[i], 'class1'])
