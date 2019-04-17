@@ -21,7 +21,7 @@ def extract_features(image_path, vector_size, label):
 
 # print(feature_extractor('/classes/0/0.jpg'))
 
-def write_csv(images_path='classes/', pickled_db_path="features.pck"):
+def write_csv(images_path='persian_number/', pickled_db_path="features.pck"):
     files = [os.path.join(images_path, p) for p in sorted(os.listdir(images_path))]
     final_path = {}
     database = []
