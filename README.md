@@ -18,3 +18,6 @@ simple implementation of machine learning algorithm from scratch in  lovlely pyh
 | BAYES      | challenge-1 | generate random data with specific mean & cov in 3 classes |
 | BAYES      | challenge-2        |   iris dataset with 4 features |
 | BAYES | challenge-3      |    persian digit image  |
+
+- #### PARZEN
+.....
