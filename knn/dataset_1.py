@@ -1,6 +1,6 @@
-import NB as nb
+import bayes.NB as nb
 import numpy as np
-import KNN
+import knn.KNN as KNN
 import random
 
 

@@ -1,7 +1,7 @@
 import cv2
 import os
 import csv
-import KNN
+import knn.KNN as KNN
 
 
 def extract_features(image_path, vector_size, label):
@@ -16,7 +16,7 @@ def extract_features(image_path, vector_size, label):
     features[-1] = str(label)
     # imgplot = plt.imshow(small)
     # plt.show()
-    return featuresmo
+    return features
 
 
 # print(feature_extractor('/classes/0/0.jpg'))

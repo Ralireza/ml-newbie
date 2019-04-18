@@ -1,4 +1,4 @@
-import KNN
+import knn.KNN as KNN
 
 myknn = KNN.knn(csv_file='iris.csv', data=None, k=1, weight=.90)
 
