@@ -1,0 +1,4 @@
+
+# Don't track content of these folders
+knn/__pycache__/
+.idea/
