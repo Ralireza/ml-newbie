@@ -1,9 +1,9 @@
 # ml-newbie
 simple implementation of machine learning algorithm from scratch in  lovlely pyhton
 
-#### Classifiers
+### Classifiers
 
-- KNN
+- ### KNN
 
 | Algorithm  | Dataset  | Description |
 | :------------ |:---------------:| :-------------------------------:|
