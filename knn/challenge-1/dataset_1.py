@@ -51,7 +51,7 @@ if I_WANT_USE_BAYES:
 
 else:
 
-    myknn = KNN.knn(data=generate_dataset_1(100), k=3, weight=l)
+    myknn = KNN.knn(data=generate_dataset_1(100), k=3, weight=0.67)
 
     test, predicted = myknn.test_data()
     ac, cm, re = myknn.report(test, predicted)
