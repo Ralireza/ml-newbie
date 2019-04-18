@@ -3,7 +3,7 @@ simple implementation of machine learning algorithm from scratch in  lovlely pyh
 
 ### Classifiers
 
-- ### KNN
+- #### KNN
 
 | Algorithm  | Dataset  | Description |
 | :------------ |:---------------:| :-------------------------------:|
@@ -11,7 +11,7 @@ simple implementation of machine learning algorithm from scratch in  lovlely pyh
 | KNN      | challenge-2        |   iris dataset with 4 features |
 | KNN | challenge-3      |    persian digit image  |
 
-- BAYES
+- #### BAYES
 
 | Algorithm  | Dataset  | Description |
 | :------------ |:---------------:| :-------------------------------:|
