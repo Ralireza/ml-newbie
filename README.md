@@ -1,8 +1,10 @@
 # ml-newbie
 simple implementation of machine learning algorithm from scratch in  lovlely pyhton
 
-### Classifiers
+####Classifiers
+
 -KNN
+
 | Algorithm  | Dataset  | Description |
 | :------------ |:---------------:| :-------------------------------:|
 | KNN      | challenge-1 | generate random data with specific mean & cov in 3 classes |
@@ -10,6 +12,7 @@ simple implementation of machine learning algorithm from scratch in  lovlely pyh
 | KNN | challenge-3      |    persian digit image  |
 
 -BAYES
+
 | Algorithm  | Dataset  | Description |
 | :------------ |:---------------:| :-------------------------------:|
 | BAYES      | challenge-1 | generate random data with specific mean & cov in 3 classes |
