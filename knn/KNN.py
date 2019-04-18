@@ -17,12 +17,7 @@ class knn:
         self.k = k
 
     def load_csv(self, data, header=False):
-        """
-        :param data: raw comma seperated file
-        :param header: remove header if it exists
-        :return:
-        Load and convert each string of data into a float
-        """
+
         ifile = open(data, "rt", )
         lines = csv.reader(ifile)
         dataset = list(lines)
@@ -52,18 +47,7 @@ class knn:
                       test_instance,
                       k,
                       distance=distance):
-        """
-        get_neighors calculates a list of the k nearest neighbors
-        of an instance 'test_instance'.
-        The list neighbors contains 3-tuples with
-        (index, dist, label)
-        where
-        index    is the index from the training_set,
-        dist     is the distance between the test_instance and the
-                 instance training_set[index]
-        distance is a reference to a function used to calculate the
-                 distances
-        """
+
         distances = []
         for index in range(len(training_set)):
             dist = distance(test_instance, training_set[index])
