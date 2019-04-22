@@ -38,10 +38,10 @@ def generate_dataset(count):
     return my_classes
 
 
-radius = [1, 2, 3, 4]
+radius = [0.5, 0.6, 0.7, 0.8, 0.9, 0.95, 1, 2, 3, 4]
 myknn = PARZEN.knn(data=generate_dataset(100), r=radius, weight=0.5)
 
-asd= myknn.test_data()
+asd = myknn.kfold_validation(10)
 print(asd)
 # ac, cm, re = myknn.report(test, predicted)
 #

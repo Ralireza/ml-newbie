@@ -60,8 +60,8 @@ class knn:
 
         # print("index: ", i,
         #       ", result of vote: ", self.vote(neighbors),
-        #       ", label: ", testset_labels[i],
-        #       ", data: ", testset_data[i])
+        #       ", label: ", test_label[i],
+        #       ", data: ", test_data[i])
         predicte = list()
         for i in range(len(self.testset_data)):
             neighbors = self.get_neighbors(self.learnset_data,

@@ -4,17 +4,20 @@ import csv
 import re
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 from sklearn.model_selection import KFold
+import sys
 
 
 class knn:
 
-    def __init__(self, csv_file=None, data=None, r=[1, 2], weight=.67):
+    def __init__(self, csv_file=None, data=None, r=None, weight=.67):
+        if r is None:
+            r = [1, 2]
         if not csv_file is None:
             data = self.load_csv(csv_file, header=False)
         mydata, labels = self.translate(data)
-        self.learnset_data, self.learnset_labels, self.testset_data, self.testset_labels = self.split_data(mydata,
-                                                                                                           labels,
-                                                                                                           weight)
+        self.train_data, self.train_label, self.test_data, self.test_label = self.split_data(mydata,
+                                                                                             labels,
+                                                                                             weight)
         self.r = r
 
     def load_csv(self, data, header=False):
@@ -74,30 +77,66 @@ class knn:
     def split_data(self, data, label, weight):
 
         n_training_samples = int(len(data) * weight)
-
         np.random.seed(1)  # lock the random numbers
         indices = np.random.permutation(len(data))
-        learnset_data = data[indices[:-n_training_samples]]
-        learnset_labels = label[indices[:-n_training_samples]]
-        testset_data = data[indices[-n_training_samples:]]
-        testset_labels = label[indices[-n_training_samples:]]
-        return learnset_data, learnset_labels, testset_data, testset_labels
+        train_data = data[indices[:-n_training_samples]]
+        train_label = label[indices[:-n_training_samples]]
+        test_data = data[indices[-n_training_samples:]]
+        test_label = label[indices[-n_training_samples:]]
+        return train_data, train_label, test_data, test_label
+
+    def kfold_validation(self, fold_number):
+        kf = KFold(n_splits=fold_number, shuffle=False)
+        accuracy_cvs = dict()
+        bad_radius = set()
+        all_redius = self.r
+        for train_index, validation_index in kf.split(self.train_data):
+            train_data, validation_data = self.train_data[train_index], self.train_data[validation_index]
+            train_label, validation_label = self.train_label[train_index], self.train_label[validation_index]
+            test = list(validation_label)
+            good_radius = True
+
+            for radius in all_redius:
+                predict = list()
+                for i in range(len(validation_label)):
+                    neighbors = self.get_neighbors(train_data,
+                                                   train_label,
+                                                   validation_data[i],
+                                                   radius,
+                                                   distance=self.distance)
+                    if len(neighbors) == 0:
+                        print("Radius ", radius, "is too short !!")
+                        bad_radius.add(radius)
+                        good_radius = False
+                        break
+                    else:
+                        predict.append(self.vote(neighbors))
+                if good_radius and radius not in accuracy_cvs:
+                    accuracy_cvs[radius] = accuracy_score(test, predict)
+                elif good_radius and accuracy_cvs[radius] < accuracy_score(test, predict):
+                    accuracy_cvs[radius] = accuracy_score(test, predict)
+       # remove bad radius in all fold iteration
+        for items in bad_radius:
+            accuracy_cvs.pop(items)
+        return accuracy_cvs
 
     def test_data(self):
 
-        accuracy_cvs = list()
-        for radius in self.r:
-            predict = list()
-            for i in range(len(self.testset_data)):
-                neighbors = self.get_neighbors(self.learnset_data,
-                                               self.learnset_labels,
-                                               self.testset_data[i],
-                                               radius,
-                                               distance=self.distance)
-                predict.append(self.vote(neighbors))
-                test = list(self.testset_labels)
-            accuracy_cvs.append({radius:accuracy_score(test, predict)})
-        return accuracy_cvs
+        # print("index: ", i,
+        #       ", result of vote: ", self.vote(neighbors),
+        #       ", label: ", test_label[i],
+        #       ", data: ", test_data[i])
+        predicte = list()
+        for i in range(len(self.test_data)):
+            neighbors = self.get_neighbors(self.train_data,
+                                           self.train_label,
+                                           self.test_data[i],
+                                           self.k,
+                                           distance=self.distance)
+            predicte.append(self.vote(neighbors))
+
+            test = list(self.test_label)
+        return test, predicte
 
     def report(self, test, predict):
         accuracy = accuracy_score(test, predict)
