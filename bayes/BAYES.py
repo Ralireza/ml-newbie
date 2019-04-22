@@ -12,12 +12,7 @@ class GaussNB:
         pass
 
     def load_csv(self, data, header=False):
-        """
-        :param data: raw comma seperated file
-        :param header: remove header if it exists
-        :return:
-        Load and convert each string of data into a float
-        """
+
         ifile = open(data, "rt", )
         lines = csv.reader(ifile)
         dataset = list(lines)
@@ -29,12 +24,7 @@ class GaussNB:
         return dataset
 
     def split_data(self, data, weight):
-        """
-        :param data:
-        :param weight: indicates the percentage of rows that'll be used for training
-        :return:
-        Randomly selects rows for training according to the weight and uses the rest of the rows for testing.
-        """
+
         train_size = int(len(data) * weight)
         train_set = []
         for i in range(train_size):
@@ -45,12 +35,7 @@ class GaussNB:
         return [train_set, data]
 
     def group_by_class(self, data, target):
-        """
-        :param data: Training set. Lists of events (rows) in a list
-        :param target: Index for the target column. Usually the last index in the list
-        :return:
-        Mapping each target to a list of it's features
-        """
+
         target_map = defaultdict(list)
         for index in range(len(data)):
             features = data[index]
@@ -61,19 +46,12 @@ class GaussNB:
         return dict(target_map)
 
     def mean(self, numbers):
-        """
-        :param numbers: list of numbers
-        :return:
-        """
+
         result = sum(numbers) / float(len(numbers))
         return result
 
     def stdev(self, numbers):
-        """
-        :param numbers: list of numbers
-        :return:
-        Calculate the standard deviation for a list of numbers.
-        """
+
         avg = self.mean(numbers)
         squared_diff_list = []
         for num in numbers:
