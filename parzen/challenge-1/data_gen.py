@@ -39,23 +39,13 @@ def generate_dataset(count):
 
 
 radius = [0.5, 0.6, 0.7, 0.8, 0.9, 0.95, 1, 2, 3, 4]
-myknn = PARZEN.knn(data=generate_dataset(100), r=radius, weight=0.5)
+my_parzen = PARZEN.knn(data=generate_dataset(100), r=radius, weight=0.7)
 
-asd = myknn.kfold_validation(10)
-print(asd)
-# ac, cm, re = myknn.report(test, predicted)
-#
-# print(re, "\n")
-# print(cm, "\n")
-# print(ac, "\n")
-#
-# from sklearn.model_selection import KFold, RepeatedKFold
-#
-# kf = KFold(n_splits=5, shuffle=False)
-# X = np.array([[1, 2], [3, 4], [3, 4], [3, 4], [3, 4], [3, 4]])
-# y = np.array([[1, 2], [3, 4], [3, 4], [3, 4], [3, 4], [3, 4]])
-#
-# for train_index, test_index in kf.split(X):
-#     print("Train:", train_index, "Validation:", test_index, X[test_index])
-#     X_train, X_test = X[train_index], X[test_index]
-#     # y_train, y_test = y[train_index], y[test_index]
+radius_accuracy_dict,best_radius = my_parzen.kfold_validation(10)
+test, predict = my_parzen.test(best_radius)
+ac, cm, re = my_parzen.report(test, predict)
+# TODO bad radius exist yet in test
+print(re, "\n")
+print(cm, "\n")
+print(ac, "\n")
+

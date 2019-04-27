@@ -4,7 +4,7 @@ import csv
 import re
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 from sklearn.model_selection import KFold
-import sys
+import operator
 
 
 class knn:
@@ -105,7 +105,7 @@ class knn:
                                                    radius,
                                                    distance=self.distance)
                     if len(neighbors) == 0:
-                        print("Radius ", radius, "is too short !!")
+                        # print("Radius ", radius, "is too short !!")
                         bad_radius.add(radius)
                         good_radius = False
                         break
@@ -115,12 +115,13 @@ class knn:
                     accuracy_cvs[radius] = accuracy_score(test, predict)
                 elif good_radius and accuracy_cvs[radius] < accuracy_score(test, predict):
                     accuracy_cvs[radius] = accuracy_score(test, predict)
-       # remove bad radius in all fold iteration
+        # remove bad radius in all fold iteration
         for items in bad_radius:
             accuracy_cvs.pop(items)
-        return accuracy_cvs
+        best_radius = max(accuracy_cvs.items(), key=operator.itemgetter(1))[0]
+        return accuracy_cvs, best_radius
 
-    def test_data(self):
+    def test(self, best_radius):
 
         # print("index: ", i,
         #       ", result of vote: ", self.vote(neighbors),
@@ -131,7 +132,7 @@ class knn:
             neighbors = self.get_neighbors(self.train_data,
                                            self.train_label,
                                            self.test_data[i],
-                                           self.k,
+                                           best_radius,
                                            distance=self.distance)
             predicte.append(self.vote(neighbors))
 
