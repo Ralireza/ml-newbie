@@ -7,7 +7,7 @@ from sklearn.model_selection import KFold
 import operator
 
 
-class knn:
+class ParzenClassifier:
 
     def __init__(self, csv_file=None, data=None, r=None, weight=.67):
         if r is None:
@@ -118,26 +118,34 @@ class knn:
         # remove bad radius in all fold iteration
         for items in bad_radius:
             accuracy_cvs.pop(items)
-        best_radius = max(accuracy_cvs.items(), key=operator.itemgetter(1))[0]
+        best_radius=dict(sorted(accuracy_cvs.items(), key=operator.itemgetter(1), reverse=True))
+        best_radius = list(best_radius.keys())
+        print('best:   ', best_radius)
         return accuracy_cvs, best_radius
 
     def test(self, best_radius):
-
+        is_bad_radius = False
         # print("index: ", i,
         #       ", result of vote: ", self.vote(neighbors),
         #       ", label: ", test_label[i],
         #       ", data: ", test_data[i])
         predicte = list()
-        for i in range(len(self.test_data)):
-            neighbors = self.get_neighbors(self.train_data,
-                                           self.train_label,
-                                           self.test_data[i],
-                                           best_radius,
-                                           distance=self.distance)
-            predicte.append(self.vote(neighbors))
+        for b in best_radius:
+            for i in range(len(self.test_data)):
 
-            test = list(self.test_label)
-        return test, predicte
+                neighbors = self.get_neighbors(self.train_data,
+                                               self.train_label,
+                                               self.test_data[i],
+                                               b,
+                                               distance=self.distance)
+                if len(neighbors) == 0:  # bad radius
+                    is_bad_radius = True
+                    break
+                predicte.append(self.vote(neighbors))
+
+                test = list(self.test_label)
+            if is_bad_radius is False:
+                return test, predicte
 
     def report(self, test, predict):
         accuracy = accuracy_score(test, predict)

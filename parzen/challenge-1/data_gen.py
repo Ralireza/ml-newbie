@@ -39,13 +39,13 @@ def generate_dataset(count):
 
 
 radius = [0.5, 0.6, 0.7, 0.8, 0.9, 0.95, 1, 2, 3, 4]
-my_parzen = PARZEN.knn(data=generate_dataset(100), r=radius, weight=0.7)
+my_parzen = PARZEN.ParzenClassifier(data=generate_dataset(100), r=radius, weight=0.7)
 
-radius_accuracy_dict,best_radius = my_parzen.kfold_validation(10)
+radius_accuracy_dict, best_radius = my_parzen.kfold_validation(10)
+print(type(best_radius))
+
 test, predict = my_parzen.test(best_radius)
 ac, cm, re = my_parzen.report(test, predict)
-# TODO bad radius exist yet in test
 print(re, "\n")
 print(cm, "\n")
 print(ac, "\n")
-
