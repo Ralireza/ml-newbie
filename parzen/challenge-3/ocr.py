@@ -1,7 +1,7 @@
 import cv2
 import os
 import csv
-import knn.KNN as KNN
+import parzen.PARZEN as parzen
 
 
 def extract_features(image_path, vector_size, label):
@@ -34,9 +34,16 @@ def write_csv(images_path='persian_number/'):
 
 write_csv()
 
-myknn = KNN.knn(csv_file='file.csv', data=None, k=2, weight=.50)
-test, predicted = myknn.test_data()
-ac, cm, re = myknn.report(test, predicted)
-print(ac)
-print(cm)
-print(re)
+# dosent work for these feature
+# radius = [0.5, 0.6, 0.7, 0.8, 0.9, 0.95, 1, 2, 3, 4]
+#
+# my_parzen = parzen.ParzenClassifier(csv_file='file.csv', data=None, r=radius, weight=.90)
+# radius_accuracy_dict, best_radius = my_parzen.kfold_validation(10)
+#
+# test, predicted = my_parzen.test(best_radius)
+#
+# ac, cm, re = my_parzen.report(test, predicted)
+#
+# print(re, "\n")
+# print(cm, "\n")
+# print(ac, "\n")
