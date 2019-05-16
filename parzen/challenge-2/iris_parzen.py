@@ -1,6 +1,6 @@
 import parzen.PARZEN as parzen
 
-radius = [0.5, 0.6, 0.7, 0.8, 0.9, 0.95, 1, 2, 3, 4]
+radius = [0.5, 0.6, 0.7, 0.8, 0.9, 0.95, 1,1.,1.45,1.47, 2, 3, 4]
 
 my_parzen = parzen.ParzenClassifier(csv_file='iris.csv', data=None, r=radius, weight=.90)
 radius_accuracy_dict, best_radius = my_parzen.kfold_validation(10)
