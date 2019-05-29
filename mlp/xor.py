@@ -1,6 +1,10 @@
 from mlp.MultiLayerPerceptron import NueralNetwork as mlp
 import numpy
 
+# https://chih-ling-hsu.github.io/2017/08/30/NN-XOR#appendix
+# https://towardsdatascience.com/implementing-the-xor-gate-using-backpropagation-in-neural-networks-c1f255b4f20d
+# https://www.bogotobogo.com/python/python_Neural_Networks_Backpropagation_for_XOR_using_one_hidden_layer.php
+
 numpy.random.seed(0)
 
 # Set the input data
