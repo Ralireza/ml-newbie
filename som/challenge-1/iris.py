@@ -13,7 +13,7 @@ np.random.seed(1)
 weight = 0.01
 indices = np.random.permutation(len(X))
 data = X[indices[:]]
-labels = X[indices[:]]
+labels = y[indices[:]]
 
 som_iris = SOM(20, 20, 4)
 frames_iris = []
